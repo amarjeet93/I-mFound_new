@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">IamFound</string>
+    <string name="login">Login</string>
+    <string name="enter_phone_number">Enter you phone number</string>
+    <string name="login_now">LOGIN NOW</string>
+    <string name="phone_number">Phone number</string>
+    <string name="register">REGISTER</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_account"><![CDATA[<font color=#000000>Haven\'t registered yet ?</font><font color=#ffffff> Register here</font>]]></string>
+    <string name="already_account"><![CDATA[<font color=#000000>Already have an account?</font><font color=#ffffff> Login</font>]]></string>
+    <string name="number">0</string>
+    <string name="submit">Submit</string>
+    <string name="agree">I agree to</string>
+    <string name="nPass">New Password</string>
+    <string name="oPass">Old Password</string>
+    <string name="cPass">Confirm Password</string>
+    <string name="terms">Terms &amp; Condition</string>
+    <string name="and">and</string>
+    <string name="send_otp">Send OTP Now</string>
+    <string name="upload_image">Upload Photo</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="verify_phone">Verify your Phone Number</string>
+    <string name="verify_email">Verify your Email Address</string>
+    <string name="enter_otp">Enter your OTP code here</string>
+    <string name="email">Email</string>
+    <string name="name">Full Name</string>
+    <string name="save">SAVE</string>
+    <string name="subscribe">Subscribe to PRO</string>
+    <string name="report">Report a Lost Phone</string>
+    <string name="show_code">Show Bar Code</string>
+    <string name="about_us">About US</string>
+    <string name="go_profile">GO TO PROFILE</string>
+    <string name="enter_phone">Enter Mobile Number</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="address">Address</string>
+    <string name="how">How it works</string>
+    <string name="password_mismatch">Password not matched</string>
+    <string name="mobileOtpNotFound">Please fill the OTP.</string>
+    <string name="otpMismatch">Entered OTP is invalid</string>
+    <string name="alternate">Alternate Phone Number</string>
+    <string name="reward">Reward information if lost phone is found</string>
+    <string name="under_dev">This is under development</string>
+
+</resources>

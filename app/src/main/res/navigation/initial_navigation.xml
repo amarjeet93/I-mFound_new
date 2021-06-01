@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/initial_navigation"
+
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.e.iamfound.ui.welcome.splash.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_signupLoginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+       </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.e.iamfound.ui.welcome.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signupLoginFragment"
+            app:destination="@id/signupFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" >
+
+        </action>
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" >
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.e.iamfound.ui.welcome.signup.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signup_to_otpFragment"
+            app:destination="@+id/otpFragment"
+            app:popUpTo="@+id/signupFragment"
+            app:popUpToInclusive="true" >
+            <argument
+                android:name="phone_number"
+                android:defaultValue=""
+                app:argType="string" />
+            <argument
+                android:name="otp"
+                android:defaultValue=""
+                app:argType="string" />
+            <argument
+                android:name="password"
+                android:defaultValue=""
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_register_to_signupLoginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/signupFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_registe_to_webFragment"
+            app:destination="@+id/webFragment"
+            app:popUpTo="@+id/signupFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.e.iamfound.ui.welcome.otp_verify.OtpVerifyFragment"
+        android:label="OtpFragment"
+        tools:layout="@layout/fragment_otp_verify">
+        <action
+            android:id="@+id/action_otpFragment_to_createProfileFragment"
+            app:destination="@+id/createProfileFragment"
+            app:popUpTo="@+id/otpFragment"
+            app:popUpToInclusive="true" >
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/createProfileFragment"
+        android:name="com.e.iamfound.ui.welcome.createProfile.CreateProfileFragment"
+        android:label="CreateProfileFragment"
+        tools:layout="@layout/fragment_create_profile">
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.e.iamfound.ui.welcome.forgotPassword.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment"
+        tools:layout="@layout/forgot_password_fragment" >
+        <action
+            android:id="@+id/action_forgotFragment_to_resetFragment"
+            app:destination="@id/resetPass" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPass"
+        android:name="com.e.iamfound.ui.welcome.resetPassword.ResetPasswordFragment"
+        android:label="ResetFragment"
+        tools:layout="@layout/reset_password_fragment">
+
+    <action
+        android:id="@+id/action_resetFragment_to_loginFragment"
+        app:destination="@id/loginFragment" />
+    </fragment>
+
+
+</navigation>
